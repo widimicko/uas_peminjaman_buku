@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 05, 2022 at 04:55 AM
+-- Generation Time: Jan 05, 2022 at 05:39 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -41,7 +41,6 @@ CREATE TABLE `book` (
 
 INSERT INTO `book` (`id`, `title`, `author`, `image`, `id_publisher`) VALUES
 (3, 'Talk About Love', 'Raymond Carver', 'sample cover.jpeg', 1),
-(4, 'Sample Book Title', 'Lorem Ipsum', 'sample cover 2.jpeg', 1),
 (5, 'Bumi', 'Tere Liye', '9786020332956_Bumi-New-Cover.jpg', 1),
 (6, 'Bintang', 'Tere Liye', '1.jpg', 1),
 (7, 'Bulan', 'Tere Liye', 'BULAN-TERE-LIYE.jpg', 1),
@@ -93,7 +92,6 @@ CREATE TABLE `peminjaman` (
 
 INSERT INTO `peminjaman` (`id`, `id_member`, `id_book`, `borrow_date`, `return_date`, `returned_date`, `charge`) VALUES
 (6, 5, 3, '2022-01-05', '2022-01-12', '2022-01-05', 0),
-(8, 5, 4, '0000-00-00', '0000-00-00', '2022-01-05', 2147483647),
 (9, 6, 9, '2022-01-05', '2022-01-12', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -113,7 +111,6 @@ CREATE TABLE `publisher` (
 
 INSERT INTO `publisher` (`id`, `name`) VALUES
 (1, 'Grammedia'),
-(2, 'Perpus Online'),
 (3, 'Cetak Buku'),
 (4, 'Karyaku'),
 (6, 'Penerbit Handal');
